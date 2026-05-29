@@ -26,7 +26,7 @@
                 Width="300"
                 Margin="0,0,0,200"
                    />
-<!-- welcome message-->
+            <!-- welcome message-->
             <TextBlock
                 Text="Welcome to AI chatbot, click continue button"
                 Height="20"
