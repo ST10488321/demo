@@ -82,13 +82,13 @@
             <!-- Enter/Prompt username-->
             <TextBox
                 Height="40"
-                Width="270"
-                TextAlignment="Center"
-                Margin="0,100,0,0"
-                FontFamily="Arial Rounded MT Bold"
-                x:Name="usernames_input"
-                Background="Black"
-                Foreground="White"
+             Width="270"
+             TextAlignment="Center"
+             Margin="0,100,0,0"
+             FontFamily="Arial Rounded MT Bold"
+             x:Name="usernames_input"
+             Background="Black"
+             Foreground="White" 
                 />
 
             <!-- error message-->
