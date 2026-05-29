@@ -33,8 +33,8 @@ namespace demo
         string username = string.Empty;
         string pre_question = string.Empty;
         int counting = 0;
-
-
+        private object username_inputs;
+        private object usernames_inputs;
 
         public MainWindow()
         {
@@ -79,15 +79,21 @@ namespace demo
         //submit name  event handler
         private void submit_name(object sender, RoutedEventArgs e)
         {
+            // Get username from textbox
+            string enteredName = usernames_inputs.Text.Trim();
+
+            // check if username is empty
+            if (string.IsNullOrWhiteSpace(enteredName))
+            {
+                MessageBox.Show("please enter a username.", "Input Error", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
+
+            //Save/check username
+            username = check_name.submit_name(usernames_inputs,chats);
 
 
-
-            //check the user name from memory recall
-            username = check_name.submit_name(usernames_input, chats);
-
-
-
-
+            
 
             //Hide username page grid and set chats grid visible
             username_grid.Visibility = Visibility.Hidden;

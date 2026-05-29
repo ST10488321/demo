@@ -87,17 +87,22 @@
                 Margin="0,100,0,0"
                 FontFamily="Arial Rounded MT Bold"
                 x:Name="usernames_input"
+                Background="Black"
+                Foreground="White"
                 />
 
             <!-- error message-->
-            <TextBlock
-         Text="please enter username to continue..."
-         Height="20"
-         Width="270"
-         TextAlignment="Justify"
-         Margin="0,180,0,0"
-         Foreground="Red"
-         FontFamily="Arial Rounded MT Bold"
+            <TextBox
+             Height="40"
+             Width="270"
+             TextAlignment="Center"
+             Margin="0,150,0,0 "
+             FontFamily="Arial Rounded MT Bold" 
+             
+                Name="username_inputs"
+                Foreground="White"
+                Background="Black"
+                
          />
 
             <!-- button to submit name-->

@@ -66,6 +66,11 @@ namespace demo
 
         }//end of
 
+        internal string submit_name(object username_inputs, ListView chats)
+        {
+            throw new NotImplementedException();
+        }
+
         //method to check name of the user
         private Boolean check_name(string name)
         {//start
