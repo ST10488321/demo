@@ -94,7 +94,6 @@ namespace demo
 
                     //found_name set to true
                     found_name = true;
-
                 }//end of if
 
             }//end of the loop
