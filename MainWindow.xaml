@@ -81,7 +81,7 @@
             
             <!-- Enter/Prompt username-->
             <TextBox
-                Height="40"
+              Height="40"
              Width="270"
              TextAlignment="Center"
              Margin="0,100,0,0"
