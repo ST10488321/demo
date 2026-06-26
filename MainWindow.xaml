@@ -99,7 +99,7 @@
              Margin="0,150,0,0 "
              FontFamily="Arial Rounded MT Bold" 
              
-                Name="username_inputs"
+                Name="username_display"
                 Foreground="White"
                 Background="Black"
                 

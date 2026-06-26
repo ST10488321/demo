@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
+
 namespace demo
 {
     public class ActivityLogger
@@ -25,7 +26,7 @@ namespace demo
 
         public List<string> GetRecentLogs(int count)
         {
-            return logEntries.TakeLast(count).ToList();
+            return logEntries.Skip(Math.Max(0, logEntries.Count - count)).ToList();
         }
 
         public List<string> GetAllLogs()

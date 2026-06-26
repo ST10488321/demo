@@ -71,6 +71,11 @@ namespace demo
             throw new NotImplementedException();
         }
 
+        internal string submit_name()
+        {
+            throw new NotImplementedException();
+        }
+
         //method to check name of the user
         private Boolean check_name(string name)
         {//start

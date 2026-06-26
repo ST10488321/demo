@@ -33,8 +33,9 @@ namespace demo
         string username = string.Empty;
         string pre_question = string.Empty;
         int counting = 0;
-        private object username_inputs;
-        private object usernames_inputs;
+        private object username_input;
+        private TextBox usernames_inputs;
+        private TextBox usernameTextBox;
 
         public MainWindow()
         {
@@ -48,6 +49,8 @@ namespace demo
 
             //call the voice method
             greet.greet();
+
+            usernames_inputs = usernameTextBox;
         }
 
 
@@ -80,7 +83,7 @@ namespace demo
         private void submit_name(object sender, RoutedEventArgs e)
         {
             // Get username from textbox
-            string enteredName = usernames_inputs.Text.Trim();
+            string enteredName = usernames_input.Text.Trim();
 
             // check if username is empty
             if (string.IsNullOrWhiteSpace(enteredName))
@@ -90,10 +93,10 @@ namespace demo
             }
 
             //Save/check username
-            username = check_name.submit_name(usernames_inputs,chats);
+            username = check_name.submit_name(); username = check_name.submit_name(usernames_input, chats);
 
 
-            
+
 
             //Hide username page grid and set chats grid visible
             username_grid.Visibility = Visibility.Hidden;
